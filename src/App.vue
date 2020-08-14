@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gray-000 sm:h-screen">
+  <div id="app" class="font-sans bg-gray-000 sm:h-screen">
     <div id="nav" class="block ml-10 pr-4">
       <nav class="flex justify-center items-center mt-4">
           <div class="flex flex-row mt-5">
@@ -20,4 +20,3 @@ export default {
 }
 </script>
 
-<style lang='scss'></style>
