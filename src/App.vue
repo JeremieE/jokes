@@ -1,32 +1,23 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="bg-gray-000 sm:h-screen">
+    <div id="nav" class="block ml-10 pr-4">
+      <nav class="flex justify-center items-center mt-4">
+          <div class="flex flex-row mt-5">
+            <router-link to="/" class="mt-3 text-gray-600 mx-3 font-semibold hover:text-gray-500">Joke</router-link>
+            <router-link to="/jokes" class="mt-3 text-gray-600 mx-3 font-semibold hover:text-gray-500">First jokes</router-link>
+          </div>
+      </nav>
     </div>
     <router-view/>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+export default {
+  mounted(){
+    this.$store.dispatch('setCurrentJoke');
+  }
 }
+</script>
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<style lang='scss'></style>
