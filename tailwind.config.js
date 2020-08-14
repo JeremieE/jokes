@@ -1,10 +1,7 @@
 module.exports = {
   purge: [
-    "./pages/**/*.vue",
-    "./components/**/*.vue",
-    "./plugins/**/*.vue",
-    "./static/**/*.vue",
-    "./store/**/*.vue"
+    "../pages/Home.vue",
+    "../pages/Jokes.vue"
   ],
   theme: {
     extend: {},
