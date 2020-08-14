@@ -1,8 +1,5 @@
 module.exports = {
-  purge: [
-    "./views/Home.vue",
-    "./views/Jokes.vue"
-  ],
+  purge: [],
   theme: {
     extend: {},
     borderRadius: {
